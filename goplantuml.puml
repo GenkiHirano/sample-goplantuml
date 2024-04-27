@@ -1,0 +1,25 @@
+@startuml
+namespace model {
+    class Address << (S,Aquamarine) >> {
+        + PostalCode string
+        + Prefecture string
+        + City string
+
+    }
+    class Name << (S,Aquamarine) >> {
+        + First string
+        + Last string
+
+        + FullName() string
+
+    }
+    class User << (S,Aquamarine) >> {
+        + ID int
+        + Name Name
+        + Address Address
+
+    }
+}
+
+
+@enduml
